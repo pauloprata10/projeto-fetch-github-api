@@ -10,7 +10,8 @@ const screen = {
     </div>`
 
     let repositoriesItens = ''
-    user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}"target="_blank">${repo.name}</a></li>`)
+    user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}"
+    target="_blank">${repo.name}</a></li>`)
 
     if(user.repositories.length > 0){
         this.userProfile.innerHTML += `<div class="repositories section">
